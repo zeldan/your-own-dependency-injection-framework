@@ -4,16 +4,13 @@ import com.di.example.service.GreetingService;
 import com.di.example.service.Logger;
 import com.di.framework.annotation.OwnInject;
 
-public class Client {
-
-    private final GreetingService service;
-    private final Logger logger;
+public class FieldInjectionClient {
 
     @OwnInject
-    public Client(final GreetingService service, final Logger logger) {
-        this.service = service;
-        this.logger = logger;
-    }
+    private GreetingService service;
+
+    @OwnInject
+    private Logger logger;
 
     public void greetingDevelopers() {
         final String greeting = service.greeting();
