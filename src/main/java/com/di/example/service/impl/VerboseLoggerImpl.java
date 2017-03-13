@@ -1,6 +1,6 @@
-package com.di.app.service.impl;
+package com.di.example.service.impl;
 
-import com.di.app.service.Logger;
+import com.di.example.service.Logger;
 
 public class VerboseLoggerImpl implements Logger {
 

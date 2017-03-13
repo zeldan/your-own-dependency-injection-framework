@@ -1,4 +1,4 @@
-package com.di.app.service;
+package com.di.example.service;
 
 public interface Logger {
 

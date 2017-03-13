@@ -1,7 +1,7 @@
-package com.di.app;
+package com.di.example;
 
-import com.di.app.client.Client;
-import com.di.app.config.DependencyInjectionConfig;
+import com.di.example.client.Client;
+import com.di.example.config.DependencyInjectionConfig;
 import com.di.framework.OwnDi;
 import com.di.framework.OwnDiFramework;
 
@@ -13,7 +13,7 @@ public class SampleAppToTryDependencyInjection {
     }
 
     private static Client configDiFramework() throws Exception {
-        final OwnDiFramework ownDi = OwnDi.getContainer(new DependencyInjectionConfig());
+        final OwnDiFramework ownDi = OwnDi.getFramework(new DependencyInjectionConfig());
         return (Client) ownDi.inject(Client.class);
     }
 }

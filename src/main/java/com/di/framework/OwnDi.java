@@ -10,7 +10,7 @@ import com.di.framework.module.IModule;
  */
 public class OwnDi {
 
-    public static OwnDiFramework getContainer(final IModule module) {
+    public static OwnDiFramework getFramework(final IModule module) {
         module.configure();
         return new OwnDiFramework(module);
     }

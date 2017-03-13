@@ -1,9 +1,9 @@
-package com.di.app.config;
+package com.di.example.config;
 
-import com.di.app.service.GreetingService;
-import com.di.app.service.Logger;
-import com.di.app.service.impl.QuietLoggerImpl;
-import com.di.app.service.impl.WelcomeServiceImpl;
+import com.di.example.service.GreetingService;
+import com.di.example.service.Logger;
+import com.di.example.service.impl.QuietLoggerImpl;
+import com.di.example.service.impl.WelcomeServiceImpl;
 import com.di.framework.module.impl.AbstractModule;
 
 public class DependencyInjectionConfig extends AbstractModule {

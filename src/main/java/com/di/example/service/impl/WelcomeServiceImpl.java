@@ -1,6 +1,6 @@
-package com.di.app.service.impl;
+package com.di.example.service.impl;
 
-import com.di.app.service.GreetingService;
+import com.di.example.service.GreetingService;
 
 public class WelcomeServiceImpl implements GreetingService {
 

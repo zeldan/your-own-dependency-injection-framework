@@ -1,7 +1,7 @@
-package com.di.app.client;
+package com.di.example.client;
 
-import com.di.app.service.GreetingService;
-import com.di.app.service.Logger;
+import com.di.example.service.GreetingService;
+import com.di.example.service.Logger;
 import com.di.framework.annotation.OwnInject;
 
 public class Client {
