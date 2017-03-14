@@ -7,7 +7,7 @@ import com.di.framework.OwnDi;
 import com.di.framework.OwnDiFramework;
 
 /**
- * An example app that shows constructor and field injection.
+ * An example app that shows how you can use constructor and field injection.
  *
  * @author zeldan
  */
