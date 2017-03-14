@@ -26,7 +26,7 @@ public abstract class AbstractModule implements IModule {
     public <T> Class<? extends T> getMapping(final Class<T> type) {
         final Class<?> implementation = classMap.get(type);
         if (implementation == null) {
-            throw new IllegalArgumentException("Couldn't find the mapping (sublclass / implementation) for : " + type);
+            throw new IllegalArgumentException("Couldn't find the mapping (subclass / implementation) for : " + type);
         }
         return implementation.asSubclass(type);
     }

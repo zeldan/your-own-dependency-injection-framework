@@ -1,7 +1,7 @@
 package com.di.framework.module;
 
 /**
- * Module interface to configure dependency injection mapping,
+ * Module interface to configure dependency injection mapping.
  *
  * @author zeldan
  *

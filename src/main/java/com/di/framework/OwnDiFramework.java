@@ -8,7 +8,7 @@ import com.di.framework.annotation.OwnInject;
 import com.di.framework.module.IModule;
 
 /**
- * Own Dependency Injection framework, it uses reflection to find the dependency and inject it.
+ * Own Dependency Injection framework, it uses reflection (Constructor, Field) to find the dependency and inject it.
  *
  * @author zeldan
  *
