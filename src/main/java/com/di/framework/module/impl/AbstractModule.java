@@ -20,9 +20,6 @@ public abstract class AbstractModule implements IModule {
     }
 
     @Override
-    public abstract void configure();
-
-    @Override
     public <T> Class<? extends T> getMapping(final Class<T> type) {
         final Class<?> implementation = classMap.get(type);
         if (implementation == null) {
