@@ -9,8 +9,12 @@ import com.di.framework.module.IModule;
  * @author zeldan
  *
  */
-public class OwnDi {
+public final class OwnDi {
 
+	private OwnDi() {
+		
+	}
+	
     public static OwnDiFramework getFramework(final IModule module) {
         module.configure();
         return new OwnDiFramework(module);
