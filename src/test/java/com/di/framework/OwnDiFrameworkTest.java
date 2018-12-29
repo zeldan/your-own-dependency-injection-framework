@@ -2,6 +2,7 @@ package com.di.framework;
 
 import static org.junit.Assert.assertEquals;
 
+import com.di.framework.example.ConstructorInjectionExample;
 import org.junit.Test;
 
 import com.di.framework.example.FieldInjectionExample;
@@ -38,7 +39,7 @@ public class OwnDiFrameworkTest {
 	@Test
 	public void shouldInjectSimpleTextFormatterAndSubtractionCalculatorViaConstructorInjection() throws Exception {
 		OwnDiFramework ownDi = OwnDi.getFramework(new DependencyInjectionConfigExample3());
-		FieldInjectionExample example = (FieldInjectionExample) ownDi.inject(FieldInjectionExample.class);
+		ConstructorInjectionExample example = (ConstructorInjectionExample) ownDi.inject(ConstructorInjectionExample.class);
 		
 		String processNumbers = example.processNumbers(3, 2);
 		
