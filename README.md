@@ -1,6 +1,6 @@
 # your-own-dependency-injection-framework
 
-![Build Status](https://github.com/your-username/your-own-dependency-injection-framework/actions/workflows/maven.yml/badge.svg)
+![Build Status](https://github.com/zeldan/your-own-dependency-injection-framework/actions/workflows/maven.yml/badge.svg)
 
 This is a small project that demonstrates how to build your own dependency injection framework. 
 
