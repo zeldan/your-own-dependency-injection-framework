@@ -1,15 +1,17 @@
 # your-own-dependency-injection-framework
 
-It is very small project, that shows, how you can build your own dependency injection framework.
+![Build Status](https://github.com/your-username/your-own-dependency-injection-framework/actions/workflows/maven.yml/badge.svg)
 
-It suitable for **constructor** and **field** injection.
+This is a small project that demonstrates how to build your own dependency injection framework. 
 
-- You can find the framework itself under "com.di.framework" package.
-- You can find sample application under tests.
+It supports **constructor** and **field** injection.
 
-### How you can use
+- The framework itself can be found under the "com.di.framework" package.
+- Sample applications are available under the tests.
 
-##### 1. You have to define how you want to map interfaces to their implementations.
+### How to use
+
+##### 1. Define how you want to map interfaces to their implementations.
 
 ```java
 public class DependencyInjectionConfig extends AbstractModule {
@@ -22,7 +24,7 @@ public class DependencyInjectionConfig extends AbstractModule {
 }
 ```
 
-##### 2. Add **@OwnInject** annotation to constructor or field.
+##### 2. Add **@OwnInject** annotation to the constructor or fields.
 
 ```java
 public class ConstructorInjectionClient {
@@ -65,10 +67,22 @@ public class SampleAppToTryDependencyInjection {
 }
 ```
 
-### How it works
+### How It Works
 
 The two main classes are **AbstractModule** and **OwnDiFramework**.
  
-* The **AbstractModule** contains interfaces with their implementations (subclasses).
-* The **OwnDiFramework** performs the injection via java reflection. It checks that the constructor or fields are annotated with **@OwnInject** annotation.
+* **AbstractModule** contains interfaces with their implementations (subclasses).
+* **OwnDiFramework** performs the injection via Java reflection. It checks that the constructor or fields are annotated with the **@OwnInject** annotation.
  
+
+### Running Tests
+
+To execute tests, use the Maven Wrapper included in the project. Run the following command from the root directory of the project:
+
+```sh
+./mvnw test
+```
+
+This command will compile the project with Java 21 and run all the tests using JUnit.
+
+If you encounter any issues or have any questions, please refer to the documentation or reach out for support.

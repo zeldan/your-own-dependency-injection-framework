@@ -1,9 +1,11 @@
 package com.di.framework;
 
-import static org.junit.Assert.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 import com.di.framework.example.ConstructorInjectionExample;
-import org.junit.Test;
 
 import com.di.framework.example.FieldInjectionExample;
 import com.di.framework.example.service.CalculatorService;
